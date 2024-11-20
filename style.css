@@ -1,0 +1,210 @@
+/*nav bar modifications*/
+
+body{       height: 3000px;
+            background-color:beige; 
+            margin: auto;
+}
+.tab_bar{   color: rgb(0, 0, 0);
+    display: flex;
+    position: fixed;
+    background-color:rgb(189, 54, 94);
+    padding-top: 17px;
+    height: 10mm;
+    width: 100%; 
+    border-bottom-width: 3px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    justify-content: center;
+}
+hr{         margin-top:1cm ;
+    color: black;
+}
+
+
+.search{width: 3cm;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 22px;
+        border-style:none;
+        background-color: grey;
+        text-align: center;
+}
+.search_label{  margin-left: 20px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                font-family: Arial ;
+                font-size: 10px;
+                padding-top: 5px;}
+
+.shopping{float: right; margin-right: auto; justify-content: right;}
+.buy{justify-content:left; margin-left: auto; padding-right: 2%; position:sticky;}
+.cart_span{ position: relative; left: 27px; bottom: 40px; background-color: rgb(255, 255, 255); font-size: 15px;
+        ; text-align: center; padding-bottom:1px; font-weight: bolder; border-radius: 10px;}
+.tt{justify-content:left; margin-left: auto; padding-right: 2%; position:sticky; width: 20px; text-decoration: none; }
+
+/*navigation modification ends her*/
+
+
+/*cartegories modifications*/
+.men_prod{display: none;}
+.electro_prod{display: none;}
+.kids_prod{ display: none;}
+.women_prod{display: none;}
+
+
+.kids{      cursor: pointer;
+    width: 4cm;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: courier;
+}
+.electro{   cursor: pointer;
+    width: 4cm;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: courier;
+}
+.men{cursor: pointer;
+    width: 4cm;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: courier;
+}
+.women{     cursor: pointer;
+    width: 4cm;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: courier
+}
+a.safe{     text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-left: 3px;
+    padding-top: -40px;
+}
+.electro:hover .electro_prod {
+    display: block;
+    color: red;  
+    position: absolute;  
+    background-color: black;
+    border-color: white;
+    height: 1.05cm;
+    width: 2.5cm;
+    border-radius: 10px;
+    margin-top:6px;
+    font-family: Arial;
+    margin-left: 28px;
+}
+.kids:hover .kids_prod{
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: black;
+    height: 1.6cm;
+    width: 2.5cm;
+    border-radius: 10px;
+    margin-top:6px;
+    font-family: Arial;
+    margin-left: 28px;
+}
+.men:hover .men_prod{            
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: black;
+    height: 3cm;
+    width: 2.5cm;
+    border-radius: 10px;
+    margin-top:6px;
+    font-family: Arial;
+    margin-left: 28px;
+}
+.women:hover .women_prod{            
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: black;
+    height: 3cm;
+    width: 2.5cm;
+    border-radius: 10px;
+    margin-top:6px;
+    font-family: Arial;
+    margin-left: 28px;
+}
+.kids::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform: scaleX(0);
+    transition: transform 2s ease-in-out;
+}
+.men::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform: scaleX(0);
+    transition: transform 2s ease-in-out;
+}
+.electro::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform: scaleX(0);
+    transition: transform 2s ease-in-out;
+}
+.women::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transition: transform 2s ease-in-out;
+    transform: scaleX(0);
+}
+
+.kids:hover::after {    transform: scaleX(1)}
+.women:hover::after {   transform: scaleX(1)}
+.men:hover::after {     transform: scaleX(1)}
+.electro:hover::after { transform: scaleX(1)}
+
+/*Cart modifications starts here.*/
+
+
+/*table for products in the home page*/
+
+.shoe_table{border-collapse: collapse; justify-items: center; margin: auto;}
+tr{border: 1px black none}
+
+
+.all_star:hover{background-color: white;}
+.all_star:hover .add{   display: block;
+                        text-align: center;
+                        background-color: beige;
+                        width: 4cm;
+                        margin: auto;
+                        border-radius: 10px;
+                        border-style: none;
+                        margin : 10px;
+                        height: 0.6cm;
+                        padding-top: -2px;
+                        font-weight: bolder;
+                        cursor: pointer;                   
+}
+.add{display: none}
+
+
+h2{color: rgb(182, 32, 59); font-family: Arial; text-align: center;}
+
+
+/*Product 1 */
+
+
+.detail_1{display: block; background-color:rgb(189, 54, 94); text-align:center;}
+.all_star:hover .detail_1{display: none;}
+
+.cart_wall{display: none;}
+.buy_buy:hover .cart_wall{display: block; position: absolute; right:0%; background-color: rgb(255, 255, 255); width:10cm; margin-top: -12px;}
+.buy_buy{justify-content:left; margin-left: auto; padding-right: 2%; position:sticky;}
+
